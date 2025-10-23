@@ -1,0 +1,47 @@
+# Xcode
+DerivedData/
+build/
+xcuserdata/
+
+# Swift Package Manager
+Packages/
+.build/
+
+# CocoaPods
+Pods/
+Podfile.lock
+*.xcworkspace
+
+# Carthage
+Carthage/Build/
+
+# Accio dependency management
+Dependencies/
+.accio/
+
+# SwiftPM
+.swiftpm/xcode/package.xcworkspace/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# iOS specific
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# User-specific files
+*.xcuserstate
+*.xcscmblueprint
+
+# Misc
+*.swp
+*.lock
+*.DS_Store
+.idea/
+.vscode/
+*.iml
+
