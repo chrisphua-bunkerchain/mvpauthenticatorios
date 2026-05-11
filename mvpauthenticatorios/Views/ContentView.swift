@@ -56,15 +56,16 @@ struct ContentView: View {
                     }
                     .buttonStyle(.borderedProminent)
                     
-                    if !lastScannedText.isEmpty { Group {
-                        Text(lastScannedText)
-                            .font(.body)
-                            .padding()
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .background(Color(UIColor.secondarySystemBackground))
-                            .cornerRadius(8)
-                            .padding(.horizontal)
-                    }
+                    if !lastScannedText.isEmpty {
+                        Group {
+                            Text(lastScannedText)
+                                .font(.body)
+                                .padding()
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .background(Color(UIColor.secondarySystemBackground))
+                                .cornerRadius(8)
+                                .padding(.horizontal)
+                        }
                     }
                     
                     if let error = errorMessage {
@@ -109,6 +110,8 @@ struct ContentView: View {
         case .array(let a): parsedArray = a
         case .error(let msg): errorMessage = msg
         }
+        
+        print("Scanned Text:", lastScannedText)
     }
     
     private func startSession() {
